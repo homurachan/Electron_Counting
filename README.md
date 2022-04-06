@@ -5,7 +5,7 @@ Hybrid_electron_counting.exe is the program that generates counted images with H
 
 Usage: Hybrid_electron_counting.exe -i yourstack.mrc -m 'value_m' -x 'value_x' -p 'value_p' -O output.mrc
 
-'value_m' and 'value_x' are voltage-dependent, maybe camera dependent, too. The suggested values are '-m 45 -x 35' / '-m 30 -x 30' / '-m 30 -x 25' for our 120/200/300-kV datasets. 'value_p' describes how many counted frames are simple summed before final output. Every frame is calculated separately, however, it was meaningless if per-frame dose was very low. We collected our data with ~0.01 electron/frame/pixel, as a result, the suggest 'value_p' was 30~50 for general data or 1 for debug usage. There are also some debug options, use the command 'Hybrid_electron_counting.exe -h' to see all available options.
+'value_m' and 'value_x' are voltage-dependent, maybe camera dependent, too. The suggested values are '-m 45 -x 35', '-m 30 -x 30', '-m 30 -x 25' for our 120/200/300-kV datasets. 'value_p' describes how many counted frames are simple summed before final output. Every frame is calculated separately, however, it was meaningless if per-frame dose was very low. We collected our data with about 0.01 electron/frame/pixel, as a result, the suggest 'value_p' was 30-50 for general data or 1 for debug usage. There are also some debug options, use the command 'Hybrid_electron_counting.exe -h' to see all available options.
 
 Please cite our article if our algorithm or these programs are useful: An electron counting algorithm improves imaging of proteins with low-acceleration-voltage cryo-electron microscope, D.J. Zhu, H.G. Shi, C.L. Wu and X.Z.Zhang, Communications Biology (2022). DOI: 10.1038/s42003-022-03284-1
 
