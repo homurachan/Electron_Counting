@@ -1,7 +1,7 @@
 # Electron_Counting
 Electron counting programs for Falcon III camera.
 
-Hybrid_electron_counting.exe is the program that generates counted images with Hybrid counting method. It is a standalone program and has been tested in Ubuntu 14.04/ 16.04/18.04/20.04. 
+Hybrid_electron_counting.exe is the program that generates counted images with Hybrid counting method. It is a standalone program and has been tested in Ubuntu 14.04/16.04/18.04/20.04. 
 
 Usage: Hybrid_electron_counting.exe -i yourstack.mrc -m 'value_m' -x 'value_x' -p 'value_p' -O output.mrc
 
