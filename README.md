@@ -3,7 +3,9 @@ Electron counting programs for Falcon III camera.
 
 Hybrid_electron_counting.exe is the program that generates counted images with Hybrid counting method. It is a standalone program and has been tested in Ubuntu 14.04/16.04/18.04/20.04. 
 
-Usage: Hybrid_electron_counting.exe -i yourstack.mrc -m 'value_m' -x 'value_x' -p 'value_p' -O output.mrc
+MCF_electron_counting.exe is the program that generates counted images with Mass-Center aka MCF counting method.
+
+Usage: Hybrid/MCF_electron_counting.exe -i yourstack.mrc -m 'value_m' -x 'value_x' -p 'value_p' -O output.mrc
 
 'value_m' and 'value_x' are voltage-dependent, maybe camera dependent, too. The suggested values are '-m 45 -x 35', '-m 30 -x 30', '-m 30 -x 25' for our 120/200/300-kV datasets. 'value_p' describes how many counted frames are simple summed before final output. Every frame is calculated separately, however, it was meaningless to output every single frame if per-frame dose was very low. We collected our data with about 0.01 electron/frame/pixel, as a result, the suggest 'value_p' was 30-50 for general data or 1 for debug usage. There are also some debug options, use the command 'Hybrid_electron_counting.exe -h' to see all available options.
 
